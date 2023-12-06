@@ -185,6 +185,7 @@ def addRepos(RepositoryHandler handler) {
     handler.maven { url "https://dl.bintray.com/umsdk/release" }
     //Add the aliyun repository
     handler.maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+    handler.maven{ url 'http://nexus.1lan.tv/repository/maven-releases/'}
     //Add the Local repository
     handler.maven{ url 'LocalRepository'}
 }
