@@ -9,7 +9,7 @@ if (isNeedPackage.toBoolean()) {
 
 android {
     compileSdkVersion build_versions.target_sdk
-    buildToolsVersion build_versions.build_tools
+    //buildToolsVersion build_versions.build_tools
 
     defaultConfig {
         applicationId "com.xuexiang.mqttdemo"
@@ -55,7 +55,7 @@ android {
                 signingConfig signingConfigs.release
 
                 Properties properties = new Properties()
-                properties.load(project.rootProject.file('local.properties').newDataInputStream())
+                //properties.load(project.rootProject.file('local.properties').newDataInputStream())
                 def appID = properties.getProperty("APP_ID_UMENG")
                 if (appID != null) {
                     buildConfigField "String", "APP_ID_UMENG", appID
